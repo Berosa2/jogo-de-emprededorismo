@@ -938,6 +938,20 @@ gdjs.Cena_32sem_32t_237tuloCode.GDgivemeObjects1.length = 0;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "a");
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(2).setBoolean(true);
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "f");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -1193,8 +1207,6 @@ gdjs.Cena_32sem_32t_237tuloCode.GDgivemeObjects1.length = 0;
 }
 {runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Empredeodrismo").add(5);
 }
-{runtimeScene.getScene().getVariables().getFromIndex(2).setBoolean(true);
-}
 {for(var i = 0, len = gdjs.Cena_32sem_32t_237tuloCode.GDblock4Objects1.length ;i < len;++i) {
     gdjs.Cena_32sem_32t_237tuloCode.GDblock4Objects1[i].deleteFromScene(runtimeScene);
 }
@@ -1247,8 +1259,6 @@ gdjs.copyArray(runtimeScene.getObjects("block4"), gdjs.Cena_32sem_32t_237tuloCod
 gdjs.Cena_32sem_32t_237tuloCode.GDgivemeObjects1.length = 0;
 
 {runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Linha2").setNumber(2);
-}
-{runtimeScene.getScene().getVariables().getFromIndex(2).setBoolean(true);
 }
 {runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Empredeodrismo").add(2);
 }
@@ -1316,8 +1326,6 @@ gdjs.copyArray(runtimeScene.getObjects("block4"), gdjs.Cena_32sem_32t_237tuloCod
 gdjs.Cena_32sem_32t_237tuloCode.GDgivemeObjects1.length = 0;
 
 {runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Linha2").setNumber(3);
-}
-{runtimeScene.getScene().getVariables().getFromIndex(2).setBoolean(true);
 }
 {runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Empredeodrismo").add(5);
 }
