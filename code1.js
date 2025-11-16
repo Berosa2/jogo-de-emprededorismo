@@ -34,6 +34,15 @@ gdjs.IncioCode.GDNewTextInputObjects3= [];
 gdjs.IncioCode.GDFolder2Objects1= [];
 gdjs.IncioCode.GDFolder2Objects2= [];
 gdjs.IncioCode.GDFolder2Objects3= [];
+gdjs.IncioCode.GDredObjects1= [];
+gdjs.IncioCode.GDredObjects2= [];
+gdjs.IncioCode.GDredObjects3= [];
+gdjs.IncioCode.GDred2Objects1= [];
+gdjs.IncioCode.GDred2Objects2= [];
+gdjs.IncioCode.GDred2Objects3= [];
+gdjs.IncioCode.GDNewTextObjects1= [];
+gdjs.IncioCode.GDNewTextObjects2= [];
+gdjs.IncioCode.GDNewTextObjects3= [];
 
 
 gdjs.IncioCode.mapOfGDgdjs_9546IncioCode_9546GDNewSpriteObjects2Objects = Hashtable.newFrom({"NewSprite": gdjs.IncioCode.GDNewSpriteObjects2});
@@ -120,23 +129,37 @@ gdjs.copyArray(runtimeScene.getObjects("TXT"), gdjs.IncioCode.GDTXTObjects2);
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Alta"), gdjs.IncioCode.GDAltaObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Alta"), gdjs.IncioCode.GDAltaObjects2);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.IncioCode.GDAltaObjects1.length;i<l;++i) {
-    if ( gdjs.IncioCode.GDAltaObjects1[i].IsFocused(null) ) {
+for (var i = 0, k = 0, l = gdjs.IncioCode.GDAltaObjects2.length;i<l;++i) {
+    if ( gdjs.IncioCode.GDAltaObjects2[i].IsFocused(null) ) {
         isConditionTrue_0 = true;
-        gdjs.IncioCode.GDAltaObjects1[k] = gdjs.IncioCode.GDAltaObjects1[i];
+        gdjs.IncioCode.GDAltaObjects2[k] = gdjs.IncioCode.GDAltaObjects2[i];
         ++k;
     }
 }
-gdjs.IncioCode.GDAltaObjects1.length = k;
+gdjs.IncioCode.GDAltaObjects2.length = k;
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("TXT"), gdjs.IncioCode.GDTXTObjects1);
-{for(var i = 0, len = gdjs.IncioCode.GDTXTObjects1.length ;i < len;++i) {
-    gdjs.IncioCode.GDTXTObjects1[i].getBehavior("Text").setText("Alta\nMais Dinheiro\nMais Trabalho\nMenos Empredeedorismo\nMenos QI");
+gdjs.copyArray(runtimeScene.getObjects("TXT"), gdjs.IncioCode.GDTXTObjects2);
+{for(var i = 0, len = gdjs.IncioCode.GDTXTObjects2.length ;i < len;++i) {
+    gdjs.IncioCode.GDTXTObjects2[i].getBehavior("Text").setText("Alta\nMais Dinheiro\nMais Trabalho\nMenos Empredeedorismo\nMenos QI");
 }
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.prioritizeLoadingOfScene(runtimeScene, "Cena sem título");
 }
 }
 
@@ -170,8 +193,6 @@ if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("NewTextInput"), gdjs.IncioCode.GDNewTextInputObjects1);
 {runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Classe").setNumber(1);
 }
-{gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "Cena sem título");
-}
 {runtimeScene.getGame().getVariables().getFromIndex(2).getChild("QI").setNumber(120);
 }
 {runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Empredeodrismo").setNumber(20);
@@ -200,8 +221,6 @@ gdjs.IncioCode.GDMediaObjects1.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Classe").setNumber(2);
 }
-{gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "Cena sem título");
-}
 {runtimeScene.getGame().getVariables().getFromIndex(2).getChild("QI").setNumber(100);
 }
 }
@@ -226,8 +245,6 @@ gdjs.IncioCode.GDAltaObjects1.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Classe").setNumber(3);
 }
-{gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "Cena sem título");
-}
 {runtimeScene.getGame().getVariables().getFromIndex(2).getChild("QI").setNumber(70);
 }
 }
@@ -250,7 +267,17 @@ for (var i = 0, k = 0, l = gdjs.IncioCode.GDPessoa_95951Objects1.length;i<l;++i)
 }
 gdjs.IncioCode.GDPessoa_95951Objects1.length = k;
 if (isConditionTrue_0) {
+/* Reuse gdjs.IncioCode.GDPessoa_95951Objects1 */
+gdjs.copyArray(runtimeScene.getObjects("red2"), gdjs.IncioCode.GDred2Objects1);
 {runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Tipo").setNumber(1);
+}
+{for(var i = 0, len = gdjs.IncioCode.GDred2Objects1.length ;i < len;++i) {
+    gdjs.IncioCode.GDred2Objects1[i].setPosition((( gdjs.IncioCode.GDPessoa_95951Objects1.length === 0 ) ? 0 :gdjs.IncioCode.GDPessoa_95951Objects1[0].getPointX("")),(( gdjs.IncioCode.GDPessoa_95951Objects1.length === 0 ) ? 0 :gdjs.IncioCode.GDPessoa_95951Objects1[0].getPointY("")));
+}
+}
+{for(var i = 0, len = gdjs.IncioCode.GDred2Objects1.length ;i < len;++i) {
+    gdjs.IncioCode.GDred2Objects1[i].getBehavior("Resizable").setSize((( gdjs.IncioCode.GDPessoa_95951Objects1.length === 0 ) ? 0 :gdjs.IncioCode.GDPessoa_95951Objects1[0].getWidth()), (( gdjs.IncioCode.GDPessoa_95951Objects1.length === 0 ) ? 0 :gdjs.IncioCode.GDPessoa_95951Objects1[0].getHeight()));
+}
 }
 }
 
@@ -272,7 +299,39 @@ for (var i = 0, k = 0, l = gdjs.IncioCode.GDPessoa_95952Objects1.length;i<l;++i)
 }
 gdjs.IncioCode.GDPessoa_95952Objects1.length = k;
 if (isConditionTrue_0) {
+/* Reuse gdjs.IncioCode.GDPessoa_95952Objects1 */
+gdjs.copyArray(runtimeScene.getObjects("red2"), gdjs.IncioCode.GDred2Objects1);
 {runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Tipo").setNumber(2);
+}
+{for(var i = 0, len = gdjs.IncioCode.GDred2Objects1.length ;i < len;++i) {
+    gdjs.IncioCode.GDred2Objects1[i].setPosition((( gdjs.IncioCode.GDPessoa_95952Objects1.length === 0 ) ? 0 :gdjs.IncioCode.GDPessoa_95952Objects1[0].getPointX("")),(( gdjs.IncioCode.GDPessoa_95952Objects1.length === 0 ) ? 0 :gdjs.IncioCode.GDPessoa_95952Objects1[0].getPointY("")));
+}
+}
+{for(var i = 0, len = gdjs.IncioCode.GDred2Objects1.length ;i < len;++i) {
+    gdjs.IncioCode.GDred2Objects1[i].getBehavior("Resizable").setSize((( gdjs.IncioCode.GDPessoa_95952Objects1.length === 0 ) ? 0 :gdjs.IncioCode.GDPessoa_95952Objects1[0].getWidth()), (( gdjs.IncioCode.GDPessoa_95952Objects1.length === 0 ) ? 0 :gdjs.IncioCode.GDPessoa_95952Objects1[0].getHeight()));
+}
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.IncioCode.GDNewTextObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.IncioCode.GDNewTextObjects1.length;i<l;++i) {
+    if ( gdjs.IncioCode.GDNewTextObjects1[i].getBehavior("ButtonFSM").IsClicked(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.IncioCode.GDNewTextObjects1[k] = gdjs.IncioCode.GDNewTextObjects1[i];
+        ++k;
+    }
+}
+gdjs.IncioCode.GDNewTextObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Cena sem título", true);
 }
 }
 
@@ -283,7 +342,66 @@ if (isConditionTrue_0) {
 
 
 let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Classe").getAsNumber() == 1);
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Baixa"), gdjs.IncioCode.GDBaixaObjects1);
+gdjs.copyArray(runtimeScene.getObjects("red"), gdjs.IncioCode.GDredObjects1);
+{for(var i = 0, len = gdjs.IncioCode.GDredObjects1.length ;i < len;++i) {
+    gdjs.IncioCode.GDredObjects1[i].setPosition((( gdjs.IncioCode.GDBaixaObjects1.length === 0 ) ? 0 :gdjs.IncioCode.GDBaixaObjects1[0].getX()),(( gdjs.IncioCode.GDBaixaObjects1.length === 0 ) ? 0 :gdjs.IncioCode.GDBaixaObjects1[0].getY()));
+}
+}
+{for(var i = 0, len = gdjs.IncioCode.GDredObjects1.length ;i < len;++i) {
+    gdjs.IncioCode.GDredObjects1[i].getBehavior("Resizable").setSize((( gdjs.IncioCode.GDBaixaObjects1.length === 0 ) ? 0 :gdjs.IncioCode.GDBaixaObjects1[0].getWidth()), (( gdjs.IncioCode.GDBaixaObjects1.length === 0 ) ? 0 :gdjs.IncioCode.GDBaixaObjects1[0].getHeight()));
+}
+}
+}
+
+}
+
+
 {
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Classe").getAsNumber() == 2);
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Media"), gdjs.IncioCode.GDMediaObjects1);
+gdjs.copyArray(runtimeScene.getObjects("red"), gdjs.IncioCode.GDredObjects1);
+{for(var i = 0, len = gdjs.IncioCode.GDredObjects1.length ;i < len;++i) {
+    gdjs.IncioCode.GDredObjects1[i].setPosition((( gdjs.IncioCode.GDMediaObjects1.length === 0 ) ? 0 :gdjs.IncioCode.GDMediaObjects1[0].getX()),(( gdjs.IncioCode.GDMediaObjects1.length === 0 ) ? 0 :gdjs.IncioCode.GDMediaObjects1[0].getY()));
+}
+}
+{for(var i = 0, len = gdjs.IncioCode.GDredObjects1.length ;i < len;++i) {
+    gdjs.IncioCode.GDredObjects1[i].getBehavior("Resizable").setSize((( gdjs.IncioCode.GDMediaObjects1.length === 0 ) ? 0 :gdjs.IncioCode.GDMediaObjects1[0].getWidth()), (( gdjs.IncioCode.GDMediaObjects1.length === 0 ) ? 0 :gdjs.IncioCode.GDMediaObjects1[0].getHeight()));
+}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Classe").getAsNumber() == 3);
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Alta"), gdjs.IncioCode.GDAltaObjects1);
+gdjs.copyArray(runtimeScene.getObjects("red"), gdjs.IncioCode.GDredObjects1);
+{for(var i = 0, len = gdjs.IncioCode.GDredObjects1.length ;i < len;++i) {
+    gdjs.IncioCode.GDredObjects1[i].setPosition((( gdjs.IncioCode.GDAltaObjects1.length === 0 ) ? 0 :gdjs.IncioCode.GDAltaObjects1[0].getX()),(( gdjs.IncioCode.GDAltaObjects1.length === 0 ) ? 0 :gdjs.IncioCode.GDAltaObjects1[0].getY()));
+}
+}
+{for(var i = 0, len = gdjs.IncioCode.GDredObjects1.length ;i < len;++i) {
+    gdjs.IncioCode.GDredObjects1[i].getBehavior("Resizable").setSize((( gdjs.IncioCode.GDAltaObjects1.length === 0 ) ? 0 :gdjs.IncioCode.GDAltaObjects1[0].getWidth()), (( gdjs.IncioCode.GDAltaObjects1.length === 0 ) ? 0 :gdjs.IncioCode.GDAltaObjects1[0].getHeight()));
+}
+}
 }
 
 }
@@ -327,6 +445,15 @@ gdjs.IncioCode.GDNewTextInputObjects3.length = 0;
 gdjs.IncioCode.GDFolder2Objects1.length = 0;
 gdjs.IncioCode.GDFolder2Objects2.length = 0;
 gdjs.IncioCode.GDFolder2Objects3.length = 0;
+gdjs.IncioCode.GDredObjects1.length = 0;
+gdjs.IncioCode.GDredObjects2.length = 0;
+gdjs.IncioCode.GDredObjects3.length = 0;
+gdjs.IncioCode.GDred2Objects1.length = 0;
+gdjs.IncioCode.GDred2Objects2.length = 0;
+gdjs.IncioCode.GDred2Objects3.length = 0;
+gdjs.IncioCode.GDNewTextObjects1.length = 0;
+gdjs.IncioCode.GDNewTextObjects2.length = 0;
+gdjs.IncioCode.GDNewTextObjects3.length = 0;
 
 gdjs.IncioCode.eventsList1(runtimeScene);
 gdjs.IncioCode.GDBaixaObjects1.length = 0;
@@ -362,6 +489,15 @@ gdjs.IncioCode.GDNewTextInputObjects3.length = 0;
 gdjs.IncioCode.GDFolder2Objects1.length = 0;
 gdjs.IncioCode.GDFolder2Objects2.length = 0;
 gdjs.IncioCode.GDFolder2Objects3.length = 0;
+gdjs.IncioCode.GDredObjects1.length = 0;
+gdjs.IncioCode.GDredObjects2.length = 0;
+gdjs.IncioCode.GDredObjects3.length = 0;
+gdjs.IncioCode.GDred2Objects1.length = 0;
+gdjs.IncioCode.GDred2Objects2.length = 0;
+gdjs.IncioCode.GDred2Objects3.length = 0;
+gdjs.IncioCode.GDNewTextObjects1.length = 0;
+gdjs.IncioCode.GDNewTextObjects2.length = 0;
+gdjs.IncioCode.GDNewTextObjects3.length = 0;
 
 
 return;
