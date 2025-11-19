@@ -11,6 +11,8 @@ gdjs.telaCode.GDiNICIARObjects1= [];
 gdjs.telaCode.GDiNICIARObjects2= [];
 gdjs.telaCode.GDwoodObjects1= [];
 gdjs.telaCode.GDwoodObjects2= [];
+gdjs.telaCode.GDpainel3Objects1= [];
+gdjs.telaCode.GDpainel3Objects2= [];
 
 
 gdjs.telaCode.mapOfGDgdjs_9546telaCode_9546GDwoodObjects1Objects = Hashtable.newFrom({"wood": gdjs.telaCode.GDwoodObjects1});
@@ -31,6 +33,8 @@ for (var i = 0, k = 0, l = gdjs.telaCode.GDiNICIARObjects1.length;i<l;++i) {
 }
 gdjs.telaCode.GDiNICIARObjects1.length = k;
 if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "ItemPickup.wav", false, 100, 1);
+}
 {gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "Incio");
 }
 }
@@ -64,6 +68,10 @@ if (isConditionTrue_0) {
     gdjs.telaCode.GDwoodObjects1[i].setZOrder(0);
 }
 }
+{for(var i = 0, len = gdjs.telaCode.GDwoodObjects1.length ;i < len;++i) {
+    gdjs.telaCode.GDwoodObjects1[i].getBehavior("Animation").setAnimationIndex(gdjs.random(1));
+}
+}
 }
 
 }
@@ -76,7 +84,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("wood"), gdjs.telaCode.GDwoodObjects1);
 {for(var i = 0, len = gdjs.telaCode.GDwoodObjects1.length ;i < len;++i) {
-    gdjs.telaCode.GDwoodObjects1[i].setY(gdjs.telaCode.GDwoodObjects1[i].getY() + (gdjs.randomInRange(1, 5)));
+    gdjs.telaCode.GDwoodObjects1[i].setY(gdjs.telaCode.GDwoodObjects1[i].getY() + (gdjs.randomInRange(1, 10)));
 }
 }
 }
@@ -99,6 +107,8 @@ gdjs.telaCode.GDiNICIARObjects1.length = 0;
 gdjs.telaCode.GDiNICIARObjects2.length = 0;
 gdjs.telaCode.GDwoodObjects1.length = 0;
 gdjs.telaCode.GDwoodObjects2.length = 0;
+gdjs.telaCode.GDpainel3Objects1.length = 0;
+gdjs.telaCode.GDpainel3Objects2.length = 0;
 
 gdjs.telaCode.eventsList0(runtimeScene);
 gdjs.telaCode.GDNewSpriteObjects1.length = 0;
@@ -111,6 +121,8 @@ gdjs.telaCode.GDiNICIARObjects1.length = 0;
 gdjs.telaCode.GDiNICIARObjects2.length = 0;
 gdjs.telaCode.GDwoodObjects1.length = 0;
 gdjs.telaCode.GDwoodObjects2.length = 0;
+gdjs.telaCode.GDpainel3Objects1.length = 0;
+gdjs.telaCode.GDpainel3Objects2.length = 0;
 
 
 return;
