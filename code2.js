@@ -11,13 +11,13 @@ gdjs.WINCode.GDpainel3Objects1= [];
 gdjs.WINCode.GDpainel3Objects2= [];
 
 
-gdjs.WINCode.asyncCallback15598164 = function (runtimeScene, asyncObjectsList) {
+gdjs.WINCode.asyncCallback16743676 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.WINCode.localVariables);
 {gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "tela");
 }
 gdjs.WINCode.localVariables.length = 0;
 }
-gdjs.WINCode.idToCallbackMap.set(15598164, gdjs.WINCode.asyncCallback15598164);
+gdjs.WINCode.idToCallbackMap.set(16743676, gdjs.WINCode.asyncCallback16743676);
 gdjs.WINCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -27,7 +27,7 @@ gdjs.WINCode.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.WINCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(10), (runtimeScene) => (gdjs.WINCode.asyncCallback15598164(runtimeScene, asyncObjectsList)), 15598164, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(10), (runtimeScene) => (gdjs.WINCode.asyncCallback16743676(runtimeScene, asyncObjectsList)), 16743676, asyncObjectsList);
 }
 }
 
